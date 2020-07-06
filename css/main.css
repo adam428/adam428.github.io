@@ -19,14 +19,13 @@ html {
 
 body
 {
-  background-image: url("../img/background2.jpg");
-  background-color: #cccccc;
+  background-image: url("../img/background1.jpg");
 }
 
-.container
+.container-fluid
 {
   color: #ffffff;
-  margin-top: 50px;
+  margin-top: 150px;
   border-style: solid;
   border-color: purple;
   padding: 30px;
@@ -34,46 +33,21 @@ body
 
 .nav-link
 {
-  color: #900C3F;
+  color: white !important;
+  font-family: 'Anton', sans-serif;
   font-size: 26px;
+}
+
+.nav-item
+{
+  color: white !important;
 }
 
 .nav-link:hover
 {
-  color:#C70039;
+  color:#C70039 !important;
 }
 
-.modal-content
-{
-  padding: 50px;
-}
-
-.modal-content
-{
-  background-color: #581845;
-}
-
-#aboutmemodal
-{
-  background-color: #581845;
-  color: #ffffff;
-}
-
-
-.navbar-toggler
-{
-  width: 47px;
-  height: 34px;
-  background-color: #7eb444;
-}
-
-.navbar-toggler .line {
-  width: 100%;
-  float: left;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 5px;
-}
 
 
 
