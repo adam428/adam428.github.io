@@ -27,133 +27,45 @@ body
 }
 
 
-#social
-{
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
 
-ol
+section
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-ol li
-{
-  list-style: none;
-}
-
-ol li a
-{
-  display: block;
+  margin-top: 100px;
   position: relative;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: #262626;
-  margin: 0 10px;
-  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
 }
 
-ol li a span
+section .box
 {
+  position: relative;
+  padding: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  overflow: hidden;
+  color: #000;
+}
+
+
+section .box:before
+{
+  content: '';
   position: absolute;
-  transition: transform .5s;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-attachment: fixed;
+  filter: blur(4px);
 }
-
-ol li a span:nth-child(1),
-ol li a span:nth-child(3)
-{
-  width: 100%;
-  height: 1px;
-  background: #262626;
-}
-
-ol li a span:nth-child(1)
-{
-  top: 0;
-  left: 0;
-  transform-origin: right;
-}
-
-ol li a:hover span:nth-child(1)
-{
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .5s;
-}
-
-ol li a span:nth-child(3)
-{
-  bottom: 0;
-  left: 0;
-  transform-origin: left;
-}
-
-ol li a:hover span:nth-child(3)
-{
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .5s;
-}
-
-
-
-ol li a span:nth-child(2),
-ol li a span:nth-child(4)
-{
-  width: 1px;
-  height: 100%;
-  background: #262626;
-}
-
-ol li a span:nth-child(2)
-{
-  top: 0;
-  left: 0;
-  transform: scaleY(0);
-  transform-origin: bottom;
-}
-
-ol li a:hover span:nth-child(2)
-{
-  transform: scaleY(1);
-  transform-origin: top;
-  transition: transform .5s;
-}
-
-ol li a span:nth-child(4)
-{
-  top: 0;
-  right: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-}
-
-ol li a:hover span:nth-child(4)
-{
-  transform: scaleY(1);
-  transform-origin: bottom;
-  transition: transform .5s;
-}
-
-
 
 
 .container-lg
 {
  background-color: #ffffff;
 }
+
 
 .nav-link
 {
@@ -172,6 +84,44 @@ ol li a:hover span:nth-child(4)
   color:#C70039 !important;
 }
 
+.modal
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-cont
+{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 600px;
+  height: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  animation: slideUp 0.3s ease-in-out;
+}
+
+.show-modal
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes slideUp{
+  from
+  {
+    opacity:0;
+  }
+  to
+  {
+    opacity:1;
+  }
+}
 
 
 

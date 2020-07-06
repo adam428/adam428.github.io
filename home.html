@@ -26,6 +26,7 @@
 
 
     <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
@@ -45,7 +46,14 @@
                     <a class="nav-link" href="#">My Projects</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link"  id="modal-btn" href="#">About Me</a>
+                    <div class="modal">
+                        <div class="modal-cont">
+                            <span class="close-btn"></span>
+                           <p>Hi</p>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="#">Contact Me</a>
@@ -59,63 +67,12 @@
 
 <section>
 
-
-        <div id="social">
-
-        <ol>
-            <li>
-
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-
-            </li>
-
-            <li>
-
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-
-            </li>
-
-            <li>
-
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-
-            </li>
-
-            <li>
-
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-
-            </li>
-
-        </ol>
-
-        </div>
+    <div class="box col-md-8 offset-md-2">What is Lorem Ipsum?
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
 
 </section>
+
 
 
 
@@ -123,6 +80,8 @@
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
+
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
@@ -135,6 +94,27 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script>
+    let modalBtn = document.getElementById("modal-btn")
+    let modal = document.querySelector(".modal")
+    let closeBtn = document.querySelector(".close-btn")
+    modalBtn.onclick = function(){
+        modal.style.display = "block"
+    }
+    closeBtn.onclick = function(){
+        modal.style.display = "none"
+    }
+    window.onclick = function(e){
+        if(e.target == modal){
+            modal.style.display = "none"
+        }
+    }
+
+
+</script>
+
 </body>
 
 </html>
+
