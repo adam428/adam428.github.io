@@ -117,14 +117,11 @@ p
   font-family: 'Anton', sans-serif;
   color: #ffffff;
   font-size: 150px;
-  text-shadow: 30px 30px 30px rgba(0,0,0,.5);;
+  text-shadow: 30px 30px 30px rgba(0,0,0,.5);
+  padding: 150px;
+  text-align: center;
 }
 
-.hello
-{
-  text-align: center;
-  margin: auto;
-}
 
 
 
