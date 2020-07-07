@@ -29,12 +29,11 @@ body
 
 .box
 {
-  position: relative;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  overflow: hidden;
   color: #000;
   height: 60vh;
-  margin-bottom: 20vh;
+  position: absolute;
+  margin-top: 14vh;
 }
 
 
@@ -68,13 +67,12 @@ body
 
 .modal-cont
 {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #E9E7E1;
-  width: 600px;
-  height: 400px;
+  height: 10vh;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
   animation: slideUp 0.3s ease-in-out;
   border-radius: 5px;
@@ -100,17 +98,6 @@ body
   }
 }
 
-.container-fluid
-{
-  -moz-box-shadow: 30px 30px 30px rgba(0,0,0,.5);
-  height: 100vh;
-  background-color: #292929;
-}
-
-.navigation
-{
-  height: 20vh;
-}
 
 p
 {
@@ -121,6 +108,19 @@ p
   padding: 150px;
   text-align: center;
 }
+
+#pageOne
+{
+  height: 100vh;
+}
+
+.pageTwo
+{
+  height: 100vh;
+  background-color: black;
+}
+
+
 
 
 
