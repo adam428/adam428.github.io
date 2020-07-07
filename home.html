@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> <!-- Nav font  background-image: url("../img/background1.jpg");   -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> <!-- Icons -->
 
     <meta property="og:title" content="">
@@ -27,6 +28,9 @@
 
     <meta name="theme-color" content="#fafafa">
 
+
+
+
 </head>
 
 <body>
@@ -37,7 +41,7 @@
         <header>
 
             <nav class="navigation">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,28 +49,19 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link" href="https://adamkoziel.herokuapp.com/#">Home</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" href="#">My Projects</a>
+                                    <a class="nav-link" href="#goto">My Projects</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link"  id="modal-btn" href="#">About Me</a>
-                                    <div class="modal">
-                                        <div class="modal-cont col-md-6">
-                                            <span class="close-btn"></span>
-                                           Tresc modala
-                                        </div>
-                                     </div>
+                                    <a class="nav-link" href="#">About Me</a>
+
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" class="modal-btn" href="#">Contact Me</a>
-                                    <div class="modal">
-                                        <div class="modal-cont">
-                                            <span class="close-btn"></span>
-                                            <p>Hi</p>
-                                        </div>
-                                    </div>
+                                    <a class="nav-link" id="myBtn2" href="#">Contact Me</a>
+
+
                                 </li>
                             </ul>
                         </div>
@@ -85,11 +80,31 @@
 
         </section>
 
+
+        <div id="scroll-icon" class="d-none d-md-block">
+            <a class="text" href="#goto">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            </a>
+        </div>
+
     </div>
 
-<div class="pageTwo">
+<div class="pageTwo top" id="goto">
+
+
+
+
+
 
 </div>
+
+<footer id="footer">
+
+    <p class="forfooter">designed & created by Adam Kozieł</p>
+
+</footer>
 
 
 
@@ -98,7 +113,10 @@
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<script src="js/aboutMe.js"></script>
+<script src="js/contactMe.js"></script>
+<script src="js/scrollAnimated.js"></script>
+
+
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -115,7 +133,10 @@
 
 
 
+
 </body>
+
+
 
 </html>
 
