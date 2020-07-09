@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> <!-- Nav font  background-image: url("../img/background1.jpg");   -->
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> <!-- Icons -->
 
     <meta property="og:title" content="">
@@ -18,7 +17,7 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    
+
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/main.css">
@@ -40,81 +39,138 @@
 
 <body>
 
-<div class="container-fluid p-0">
 
-<div id="pageOne">
+<main>
 
-        <header>
+    <div id="pageOne" class="container-fluid p-0">
 
-            <nav class="navigation">
-                <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <header>
 
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                        <a class="navbar-brand d-sm-none" href="#">
+                            <img src="img/icon.png" width="30" height="30" alt="logo">
+                        </a>
+                        <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav mx-auto">
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" href="https://adamkoziel.herokuapp.com/#">Home</a>
+                                    <a class="nav-link" href="#">Home</a>
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" href="#goto">My Projects</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">About Me</a>
-
-
+                                    <a class="nav-link" href="#">About Me</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" id="myBtn2" href="#">Contact Me</a>
+                                    <a class="nav-link" id="myBtn" href="#">Contact Me</a>
 
+                                    <div id="myModal" class="modal">
+
+                                        <div class="modal-content">
+
+                                            <span class="close"></span>
+
+                                            <div id="social">
+
+                                                <ol>
+                                                    <li>
+
+                                                        <a href="#">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="#">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="#">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="#">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                        </a>
+
+                                                    </li>
+
+                                                </ol>
+
+
+                                            </div>
+
+                                    </div>
 
                                 </li>
                             </ul>
                         </div>
+                    </nav>
 
-                </nav>
-            </nav>
-
-        </header>
-
-        <section>
-
-
-            <header>
-                <div class="box col-sm-12 col-md-8 offset-md-2">
-                    xxxx
-                </div>
             </header>
 
-        </section>
+    <div class="row">
 
+        <div class="box container-fluid my-5">
+
+        </div>
+
+    </div>
+
+     <div class="row">
 
         <div id="scroll-icon" class="d-none d-md-block">
             <a class="text" href="#goto">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
             </a>
         </div>
 
-</div>
+     </div>
 
-<div class="pageTwo top col-xs-12" id="goto">
-
-
+    </div>
 
 
-</div>
 
-<footer id="footer">
 
-    <p class="forfooter">designed & created by Adam Kozieł</p>
+    <div class="pageTwo top" id="goto">
 
-</footer>
 
-</div>
+    </div>
 
+
+
+</main>
 
 <!-- Add your site or application content here -->
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -122,6 +178,35 @@
 <script src="js/main.js"></script>
 <script src="js/contactMe.js"></script>
 <script src="js/scrollAnimated.js"></script>
+
+<script>
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 
 
