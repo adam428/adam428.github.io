@@ -411,7 +411,14 @@ ol li a:hover span:nth-child(4)
   color: #222222;
 }
 
-
+@media (max-width : 500px)
+{
+  .box
+  {
+    background-color: #F7F7F7;
+    background-image: url("../img/xxx");
+  }
+}
 
 
 
