@@ -133,7 +133,7 @@ body::before
   margin-left: 15px;
   display: inline-block;
   font-size :39px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 #reddit:hover
@@ -415,7 +415,18 @@ ol li a:hover span:nth-child(4)
   }
 }
 
+.projectName
+{
+  padding: 10vh;
+  text-align: center;
+}
 
+.projectNameTXT
+{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw
+}
 
 
 
