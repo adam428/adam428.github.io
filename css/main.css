@@ -35,7 +35,7 @@ body::before
   z-index: 100;
 }
 
-#pageOne
+.pageOne
 {
   height: 100vh;
   background-color: #F7F7F7;
@@ -76,7 +76,7 @@ body::before
 
 .top
 {
-  box-shadow: 0 -5px 10px -5px #333;
+  box-shadow: 0 -5px 10px -5px black;
 }
 
 

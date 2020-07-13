@@ -34,17 +34,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
-
-        $(document).ready(function(){
-            $("#flip").click(function(){
-                $("#panel").slideToggle("slow");
-            });
-        });
-
-    </script>
-
-
 
 
 </head>
@@ -54,11 +43,11 @@
 
 <main>
 
-    <div id="pageOne" class="container-fluid p-0">
+    <div id="top" class="pageOne container-fluid p-0">
 
             <header>
 
-                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
                         <a class="navbar-brand d-sm-none" href="#">
                             <img src="img/icon.png" width="30" height="30" alt="logo">
                         </a>
@@ -68,13 +57,13 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item mx-2">
-                                    <a class="nav-link" href="https://adamkoziel.herokuapp.com">Home</a>
+                                    <a class="nav-link" href="#top">Home</a>
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" href="#goto">My Projects</a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <a id="aboutme" class="nav-link" href="aboutme.html">About Me</a>
+                                    <a id="aboutme" class="nav-link" href="#">About Me</a>
                                 </li>
                                 <li class="nav-item mx-2">
                                     <a class="nav-link" id="myBtn" href="#">Contact Me</a>
@@ -171,6 +160,19 @@
     <div class="pageTwo top" id="goto">
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
@@ -207,39 +209,7 @@
 <script src="js/main.js"></script>
 <script src="js/contactMe.js"></script>
 <script src="js/scrollAnimated.js"></script>
-
-<script>
-
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
-
-
-
+<script src="js/scrollTop.js"></script>
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -248,7 +218,6 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
-
 
 
 
