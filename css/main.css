@@ -52,7 +52,6 @@ body::before
 
 .pageTwo
 {
-  height: 100vh;
   background-color: #131313;
 }
 
@@ -419,7 +418,8 @@ ol li a:hover span:nth-child(4)
 
 .projectName
 {
-  padding: 14vh;
+  padding-top: 14vh;
+  padding-bottom: 1vh;
   text-align: center;
 }
 
@@ -430,12 +430,25 @@ ol li a:hover span:nth-child(4)
   font-size: 2vw
 }
 
+.project
+{
+  border-style: none none solid none;
+  border-color: #F7F7F7;
+}
+
 @media only screen and (max-width: 500px) {
   .projectNameTXT
   {
     font-size: 4vw;
   }
 }
+
+
+
+
+
+
+
 
 
 

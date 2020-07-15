@@ -36,7 +36,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-
 </head>
 
 <body>
@@ -161,19 +160,53 @@
     <div class="pageTwo top" id="goto">
 
         <header class="projectName">
-            <h1 class="projectNameTXT">COMING SOON...</h1>
+            <h1 class="projectNameTXT">Simple Slider JS</h1>
+            <p class="comment"></p>
         </header>
 
         <section>
 
-            <div class="project">
+            <div class="project col-xs-12 py-5">
 
-                xxx
+                <div id="gallery" class="slider col-md-8 offset-2">
+
+                    <img src="img/Slider/slide1.jpg" class="col-md-8 offset-2"/>
+
+                </div>
+
+                <div id="changeSlideMenu" class="col-md-8 offset-2 text-center mt-4">
+
+                    <button id="previous" onclick="change_imgPRVS()" type="button" class="btn btn-dark" > < </button>
+                    <button id="next" onclick="change_imgNXT()" type="button" class="btn btn-dark"> > </button>
+
+                </div>
+
+
 
             </div>
 
 
         </section>
+
+
+        <header class="projectName">
+            <h1 class="projectNameTXT">COMMING SOON...</h1>
+            <p class="comment"></p>
+        </header>
+
+        <section>
+
+            <div class="project col-xs-12 py-5">
+
+
+                xxx
+
+
+            </div>
+
+
+        </section>
+
 
 
 
@@ -229,6 +262,7 @@
 <script src="js/contactMe.js"></script>
 <script src="js/scrollAnimated.js"></script>
 <script src="js/scrollTop.js"></script>
+<script src="js/slider.js"></script>
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
