@@ -8,7 +8,7 @@ function change_imgNXT()
 
     if (slide_nmbr > 4) slide_nmbr = 1;
 
-    var temp = "<img src=\"img/Slider/slide" + slide_nmbr + ".jpg\" class=\"col-md-8 offset-2\"/>";
+    var temp = "<img src=\"img/Slider/slide" + slide_nmbr + ".jpg\" class=\"img-fluid\"/>";
 
     document.getElementById("gallery").innerHTML = temp;
 
@@ -21,7 +21,7 @@ function change_imgPRVS()
 
         if (slide_nmbr <= 0) slide_nmbr = 4;
 
-        var temp = "<img src=\"img/Slider/slide" + slide_nmbr + ".jpg\" class=\"col-md-8 offset-2\"/>";
+        var temp = "<img src=\"img/Slider/slide" + slide_nmbr + ".jpg\" class=\"img-fluid\"/>";
 
         document.getElementById("gallery").innerHTML = temp;
 }
