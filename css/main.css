@@ -82,14 +82,11 @@ body::before
 
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   animation: animate 0.5s;
 }
 
@@ -104,6 +101,11 @@ body::before
   0 6px 8px rgba(0,0,0,0.11),
   0 8px 16px rgba(0,0,0,0.11);
 
+}
+
+a:hover
+{
+  cursor: pointer;
 }
 
 
@@ -432,9 +434,46 @@ ol li a:hover span:nth-child(4)
 
 .project
 {
-  border-style: none none solid none;
-  border-color: #F7F7F7;
+  overflow: hidden;
+  border: 3px solid white;
 }
+
+.project .overlay img
+{
+  transition: all .5s ease-in-out;
+}
+
+.project:hover .overlay img
+{
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+}
+
+.overlay
+{
+  postion: relative;
+}
+
+.overlay .projectTitle
+{
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #111;
+  left: 0;
+  top: 0;
+  font-size: 2vw;
+  opacity: 0.8;
+  text-align: center;
+  padding-bottom: 5px;
+  color:white;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 500px) {
   .projectNameTXT
@@ -443,6 +482,10 @@ ol li a:hover span:nth-child(4)
   }
 }
 
+#gallery
+{
+  min-height: 50vh;
+}
 
 
 
