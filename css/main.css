@@ -53,6 +53,7 @@ body::before
 .pageTwo
 {
   background-color: #131313;
+  min-height: 100vh;
 }
 
 .bg-dark
@@ -418,20 +419,6 @@ ol li a:hover span:nth-child(4)
   }
 }
 
-.projectName
-{
-  padding-top: 14vh;
-  padding-bottom: 1vh;
-  text-align: center;
-}
-
-.projectNameTXT
-{
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2vw
-}
-
 .project
 {
   overflow: hidden;
@@ -445,9 +432,9 @@ ol li a:hover span:nth-child(4)
 
 .project:hover .overlay img
 {
-  transform: scale(1.15);
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: scale(1.15); /* IE 9 */
+  transform: scale(1.15); /* IE 10, Fx 16+, Op 12.1+ */
 }
 
 .overlay
@@ -458,19 +445,45 @@ ol li a:hover span:nth-child(4)
 .overlay .projectTitle
 {
   position: absolute;
+  font-family: 'Quicksand', sans-serif;
   display: block;
   width: 100%;
-  background-color: #111;
+  background-color: #262626;
+  color: white;
   left: 0;
   top: 0;
   font-size: 2vw;
   opacity: 0.8;
   text-align: center;
-  padding-bottom: 5px;
-  color:white;
 }
 
+.pageTwo header
+{
+ padding-top: 60px;
+}
 
+.pageTwo header h1
+{
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+.project .codeIcon
+{
+  opacity: 0;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  color: #fff;
+  transition: all .2s ease-in-out;
+
+}
+
+.project:hover .codeIcon
+{
+  opacity: 1;
+}
 
 
 
@@ -478,14 +491,17 @@ ol li a:hover span:nth-child(4)
 @media only screen and (max-width: 500px) {
   .projectNameTXT
   {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 }
 
-#gallery
-{
-  min-height: 50vh;
+@media only screen and (max-width: 500px){
+  .project
+  {
+    border: none;
+  }
 }
+
 
 
 

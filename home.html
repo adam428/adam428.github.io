@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> <!-- Icons -->
 
     <meta property="og:title" content="">
@@ -34,7 +32,6 @@
     <meta name="theme-color" content="#ffffff">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/slider.css">
 
 
 </head>
@@ -169,88 +166,72 @@
 
 
 
-    <div class="pageTwo top pb-5" >
-
-        
-        <header class="projectName">
-            <h1 id="goto" class="projectNameTXT">Simple Slider JS</h1>
-            <p class="comment"></p>
-        </header>
-
-        <section>
-
-            <div class="project py-5 px-0">
-
-                <div id="gallery" class="slider col-md-8 offset-md-2 p-0">
-
-                    <img src="img/Slider/slide1.jpg" class="img-fluid"/>
-
-                </div>
-
-                <div id="changeSlideMenu" class="col-md-8 offset-md-2 text-center mt-4 p-0">
-
-                    <button id="previous" onclick="change_imgPRVS()" type="button" class="btn btn-dark" > < </button>
-                    <button id="next" onclick="change_imgNXT()" type="button" class="btn btn-dark"> > </button>
-
-                </div>
+    <div class="pageTwo container-fluid pb-5 px-0" >
 
 
 
-            </div>
+        <header id="goto"><h1>Projects</h1></header>
 
+        <div class="row">
 
-        </section>
-
-
-
-        <section>
-
-            <div class="project col-md-8 offset-md-2 p-0">
+            <div  class="project col-md-3 mx-auto my-5 p-0">
 
                 <div class="overlay">
 
-                    <a href="wisielec.html" target="_blank"><img src="img/hangman.png" class="img-fluid"/></a>
+                    <img src="img/hangman.png" class="img-fluid"/>
+
+                    <a href="wisielec.html" target="_blank"><svg width="2em" height="2em" viewBox="0 0 16 16" class="codeIcon bi bi-file-earmark-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                        <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
+                        <path fill-rule="evenodd" d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                    </svg>
+                    </a>
+
                     <p class="projectTitle">Hangman</p>
-
                 </div>
-
-
-
+                
             </div>
 
 
-        </section>
 
 
-
-        <section>
-
-            <div class="project col-md-8 offset-md-2 p-0 my-5">
+            <div class="project col-md-3 mx-auto my-5 p-0">
 
                 <div class="overlay">
 
                     <img src="img/hangman.png" class="img-fluid"/>
                     <p class="projectTitle">Coming Soon..</p>
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="codeIcon bi bi-file-earmark-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                        <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
+                        <path fill-rule="evenodd" d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                    </svg>
 
                 </div>
 
-
-
             </div>
 
+            <div class="project col-md-3 mx-auto my-5 p-0">
 
-        </section>
+                <div class="overlay">
 
+                    <img src="img/hangman.png" class="img-fluid"/>
+                    <p class="projectTitle">Coming Soon..</p>
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="codeIcon bi bi-file-earmark-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                        <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
+                        <path fill-rule="evenodd" d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                    </svg>
 
+                </div>
 
-
-
+            </div>
 
 
 
     </div>
 
-
+    </div>
 
 </main>
 
@@ -274,7 +255,7 @@
 
     </div>
 
-    <p>created & designed by Adam Kozieł</p>
+    <p>designed & created by Adam Kozieł</p>
 
 </footer>
 
